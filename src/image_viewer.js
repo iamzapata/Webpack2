@@ -1,13 +1,9 @@
-import big from '../assets/images/big.jpeg'
 import small from '../assets/images/small.jpeg'
-import '../styles/image_viewer.css'
+import '../styles/main.css'
 
-const smallImage = document.createElement('img')
-smallImage.src = small
+export default () => {
+  const smallImage = document.createElement('img')
+  smallImage.src = small
 
-document.body.appendChild(smallImage)
-
-const bigImage = document.createElement('img')
-bigImage.src = big
-
-document.body.appendChild(bigImage)
+  document.body.appendChild(smallImage)
+}
